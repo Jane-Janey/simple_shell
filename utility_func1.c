@@ -5,7 +5,6 @@
  *@s:string whose length to check
  * Return: Integer length of string
  */
-i
 int _strlen(const char *s)
 {
 	int i = 0;
