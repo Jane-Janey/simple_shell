@@ -2,8 +2,8 @@
 
 static char *last_input;
 /**
- * getinput - get input from user.
- * 
+ * get_input - read input from user
+ * Return: pointer to a buffer containing user's input
 */
 char *get_input(void)
 {
@@ -29,7 +29,10 @@ char *get_input(void)
 	last_input = input;
 	return (input);
 }
-
+/**
+ * free_last_input-frees the most recent input entered by the user
+ * Frees the memory allocated for the most recent input
+ */
 void free_last_input(void)
 {
 	free(last_input);
