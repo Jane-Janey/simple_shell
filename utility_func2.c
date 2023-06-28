@@ -2,8 +2,8 @@
 
 /**
  * _strcpy -Copies a string
- * 
- *
+ * @dest:destination
+ * @src:source
  * Return: Pointer to a destination
  */
 
@@ -21,6 +21,12 @@ char *_strcpy(char *dest, char *src)
 	dest[i] = 0;
 	return (dest);
 }
+/**
+ * _strcat - joins or adds two strings
+ * @dest:destination
+ * @src:source
+ * Return:pointer to destination buffer
+ */
 char *_strcat(char *dest, const char *src)
 {
 	char *ret = dest;
@@ -32,6 +38,11 @@ char *_strcat(char *dest, const char *src)
 	*dest = *src;
 	return (ret);
 }
+/**
+ * _strdup -Duplicates a string
+ * @str:string to duplicate
+ * Return:pointer to the duplicated string
+ */
 char *_strdup(const char *str)
 {
 	int length = 0;
@@ -48,10 +59,22 @@ char *_strdup(const char *str)
 		ret[length] = *--str;
 	return (ret);
 }
+/**
+ *_putchar -Writes character c to stdout
+ * @c:character to print
+ * Return:on success 1
+ * On error, -1 is returned and an errno is set
+ */
 int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
+/**
+ * _strspn - Gets the length of a prefix substring
+ * @s:pointer to string input
+ * @accept:substring prefix to look for
+ * Return:number of bytes in the initial segment
+ */
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, j;

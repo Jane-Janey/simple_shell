@@ -2,8 +2,8 @@
 
 /**
  * tokenize - parsing user input into arguments
- * @str: the string to be tokenized.
- *
+ * @str: the string to be tokenized
+ * @delim: used to split the string
  * Return: NULL if an error occurs
  */
 
@@ -35,6 +35,11 @@ char **tokenize(char *str, const char *delim)
 	ret[i] = NULL;
 	return (ret);
 }
+/**
+ * tokenize_input -Splits a user input string into tokens with tokenize()
+ * @input:user input string to be tokenized
+ * Return:an array of pointers to the token or NULL if an error occurs
+ */
 char **tokenize_input(char *input)
 {
 	char **tokens = NULL;

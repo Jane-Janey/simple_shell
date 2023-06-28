@@ -3,7 +3,7 @@
 /**
  * _atoi -converts a string to an integer
  * @str: string to convert
- *
+ * Return:integer value of the string
  */
 
 int _atoi(const char *str)
@@ -27,6 +27,14 @@ int _atoi(const char *str)
 	}
 	return (num * sign);
 }
+/**
+ **_memset -fills memory with a constant byte
+ *@s:pointer to the memory area
+ *@b:byte to fill *s with
+ *@n:amount of bytes to be filled
+ *Return:(s) a pointer to the memory area s
+ */
+
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
@@ -35,6 +43,13 @@ char *_memset(char *s, char b, unsigned int n)
 		s[i] = b;
 	return (s);
 }
+/**
+ * _memcpy - Copies memory area
+ * @dest: buffer to copy to
+ * @src:what to copy
+ * @n:n bytes of @src
+ * Return:Always 0 on (Success)
+*/
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
@@ -43,6 +58,13 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 		dest[i] = src[i];
 	return (dest);
 }
+/**
+ * _realloc -Reallocates a block of memory
+ * @ptr:pointer to previous malloc'ated block
+ * @old_size:byte size of a previous block
+ * @new_size:byte size of a new block
+ * Return: pointer to 
+ */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	char *p;
@@ -64,6 +86,12 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	free(ptr);
 	return (p);
 }
+/**
+ * _calloc - function that allocates memory for an array using malloc
+ * @nmemb:size of the array
+ * @size:size of each element
+ * Return:pointer with new allocated memory or NULL if it fails
+*/
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *p;

@@ -30,7 +30,7 @@ void free_tokens(char **ptr)
 	free(ptr);
 }
 /**
- * free_path - Free global variable containing the PATH environment variable value
+ * free_path - Free global variable containing PATH environment variable value
  * Return: nothing
  */
 

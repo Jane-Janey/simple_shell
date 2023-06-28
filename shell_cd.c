@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * shell_cd -change directory 
+ * shell_cd -change directory
  * @args: array of arguments
  */
 
