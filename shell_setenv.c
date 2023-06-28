@@ -26,7 +26,11 @@ int shell_setenv(char **args)
 	}
 	return (0);
 }
-
+/**
+ * shell_unsetenv - unset an environment var
+ * @args: arguments
+ * Return:nothing
+ */
 int shell_unsetenv(char **args)
 {
 	char *name;

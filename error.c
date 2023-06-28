@@ -18,6 +18,11 @@ void _puts(char *str)
 		perror("write");
 	}
 }
+/**
+ * _puterror -Prints an error message to the std error
+ * @err:error message to print
+ * Return:void
+ */
 void _puterror(char *err)
 {
 	size_t len;

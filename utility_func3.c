@@ -63,7 +63,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
  * @ptr:pointer to previous malloc'ated block
  * @old_size:byte size of a previous block
  * @new_size:byte size of a new block
- * Return: pointer to 
+ * Return: pointer to
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
