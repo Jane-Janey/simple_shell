@@ -76,6 +76,7 @@ typedef struct builtin
 	int (*func)(info_t *);
 } builtin_table;
 
+void rev_string(char *s)
 /* loophsh.c */
 int loophsh(char **);
 /* realloc.c */
