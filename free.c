@@ -2,11 +2,9 @@
 
 /**
  * free_error - Free allocated pointers following system error
- * free_tokens - free memory allocated dynamically by tokenize
- * free_path - free the global variable containing the PATH environment variable value
  * @argv: Pointer to a pointer to an array of pointers
  * @arg:  Pointer to a pointer to an array of characters
- * @ptr:  Pointer to allocated memory
+ * Return : void
  */
 void free_error(char **argv, char *arg)
 {
@@ -18,7 +16,11 @@ void free_error(char **argv, char *arg)
 	free(arg);
 	exit(EXIT_FAILURE);
 }
-
+/**
+ * free_tokens -Free memory allocated by tokenize()
+ * @ptr: Pointer to allocated memory
+ * Return: void
+ */
 void free_tokens(char **ptr)
 {
 	int i;
@@ -27,6 +29,10 @@ void free_tokens(char **ptr)
 		free((ptr[i]));
 	free(ptr);
 }
+/**
+ * free_path - Free global variable containing the PATH environment variable value
+ * Return: nothing
+ */
 
 void free_path(void)
 {

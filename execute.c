@@ -2,7 +2,7 @@
 
 /**
  * execute - execute
- * @argv: array of strings 
+ * @argv: array of strings
  * Return: The exit status of the executed command.
  */
 int execute(char **argv)
